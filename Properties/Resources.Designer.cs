@@ -59,15 +59,5 @@ namespace MIFARMACIA.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap FarmVida {
-            get {
-                object obj = ResourceManager.GetObject("FarmVida", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
