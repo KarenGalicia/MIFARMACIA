@@ -19,6 +19,7 @@ namespace MIFARMACIA
     public partial class Form1 : Form
     {
         private MEDI Medica;
+        private readonly string connectionString;
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +27,9 @@ namespace MIFARMACIA
 
         }
 
-        private void Button_mostrar_Click(object sender, EventArgs e)
+     
+
+            private void Button_mostrar_Click(object sender, EventArgs e)
         {
             dataGridViewvermedicamentos.DataSource = Medica.Leerproductos_farmacia();
 
@@ -56,7 +59,6 @@ namespace MIFARMACIA
 
             try
             {
-                int Id = int.Parse(text_Id.Text);
 
                 string Nombre_producto = Text_producto.Text;
                 string Tipo_medicamento = Text_Tipodemedicamento.Text;
@@ -64,7 +66,7 @@ namespace MIFARMACIA
                 string Categoria = Text_Categoria.Text;
                 decimal Precio;
 
-                if (!decimal.TryParse(Text_Precio.Text, out Precio))
+                if (!decimal.TryParse(text_Precio.Text, out Precio))
                 {
                     MessageBox.Show("El formato del precio no es correcto. Por favor, ingrese un valor decimal.");
                     return;
@@ -92,6 +94,7 @@ namespace MIFARMACIA
 
                 if (resultado == DialogResult.Yes)
                 {
+                    Medica.Generar_producto(Nombre_producto, Tipo_medicamento, Descripcion, Categoria, Precio, Restricciones_venta, Marca, Dosis, Presentacion, Fecha_vencimiento, Indicaciones, Contraindicaciones, Efectos_secundarios, Proveedor, Ubicacion_tienda, Fecha_adquisicion, Existencia);
                     MessageBox.Show("Producto creado correctamente");
 
                 }
@@ -109,10 +112,9 @@ namespace MIFARMACIA
 
 
 
-        public void Actualizar(object sender, EventArgs e)
+        public void Actualizar()
 
         {
-
 
 
             int Id = int.Parse(text_Id.Text);
@@ -120,14 +122,7 @@ namespace MIFARMACIA
             string Tipo_medicamento = Text_Tipodemedicamento.Text;
             string Descripcion = text_Descripción.Text;
             string Categoria = Text_Categoria.Text;
-            decimal Precio;
-
-            if (!decimal.TryParse(Text_Precio.Text, out Precio))
-            {
-                MessageBox.Show("El formato del precio no es correcto. Por favor, ingrese un valor decimal.");
-                return;
-            }
-
+            decimal Precio = int.Parse(text_Precio.Text);
             string Restricciones_venta = Text_Restriccionesdeventa.Text;
             string Marca = text_Marca.Text;
             string Dosis = Text_Dosis.Text;
@@ -175,7 +170,7 @@ namespace MIFARMACIA
             }
 
             decimal Precio;
-            if (!decimal.TryParse(Text_Precio.Text, out Precio) || Precio <= 0)
+            if (!decimal.TryParse(text_Precio.Text, out Precio) || Precio <= 0)
             {
                 MessageBox.Show("El precio debe ser un valor decimal válido y mayor que 0.");
                 return false;
@@ -203,7 +198,7 @@ namespace MIFARMACIA
                     if (result == DialogResult.Yes)
                     {
                         // Llamar al método Actualizar solo si el usuario confirma la actualización
-                        Actualizar(sender, e);
+                        Actualizar();
                     }
                     else
                     {
@@ -216,7 +211,31 @@ namespace MIFARMACIA
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+
+        private void eliminarBtn_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                DialogResult result = MessageBox.Show("¿Quieres eliminar este medicamento?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    int Id = int.Parse(text_Id.Text);
+                    Medica.Eliminar(Id);
+                    MessageBox.Show("Eliminación con éxito.");
+                }
+                else
+                {
+                    MessageBox.Show("Eliminación cancelada.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
+    }
     }
 
 

@@ -54,7 +54,7 @@
             this.Text_Tipodemedicamento = new System.Windows.Forms.TextBox();
             this.text_Descripción = new System.Windows.Forms.TextBox();
             this.Text_Categoria = new System.Windows.Forms.TextBox();
-            this.Text_Precio = new System.Windows.Forms.TextBox();
+            this.text_Precio = new System.Windows.Forms.TextBox();
             this.text_Marca = new System.Windows.Forms.TextBox();
             this.Text_Dosis = new System.Windows.Forms.TextBox();
             this.text_Presentacion = new System.Windows.Forms.TextBox();
@@ -69,6 +69,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Button_actualizar = new System.Windows.Forms.Button();
             this.Check_Existencia = new System.Windows.Forms.CheckBox();
+            this.eliminarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewvermedicamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -299,12 +300,12 @@
             this.Text_Categoria.Size = new System.Drawing.Size(120, 20);
             this.Text_Categoria.TabIndex = 30;
             // 
-            // Text_Precio
+            // text_Precio
             // 
-            this.Text_Precio.Location = new System.Drawing.Point(533, 138);
-            this.Text_Precio.Name = "Text_Precio";
-            this.Text_Precio.Size = new System.Drawing.Size(120, 20);
-            this.Text_Precio.TabIndex = 31;
+            this.text_Precio.Location = new System.Drawing.Point(533, 138);
+            this.text_Precio.Name = "text_Precio";
+            this.text_Precio.Size = new System.Drawing.Size(120, 20);
+            this.text_Precio.TabIndex = 31;
             // 
             // text_Marca
             // 
@@ -407,12 +408,23 @@
             this.Check_Existencia.Text = "EXISTENCIA:";
             this.Check_Existencia.UseVisualStyleBackColor = true;
             // 
+            // eliminarBtn
+            // 
+            this.eliminarBtn.Location = new System.Drawing.Point(857, 304);
+            this.eliminarBtn.Name = "eliminarBtn";
+            this.eliminarBtn.Size = new System.Drawing.Size(157, 41);
+            this.eliminarBtn.TabIndex = 51;
+            this.eliminarBtn.Text = "ELIMINAR MEDICAMENTO";
+            this.eliminarBtn.UseVisualStyleBackColor = true;
+            this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1026, 666);
+            this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.Button_actualizar);
             this.Controls.Add(this.Check_Existencia);
             this.Controls.Add(this.dateTimePicker_Fechadeadquisicion);
@@ -426,7 +438,7 @@
             this.Controls.Add(this.text_Presentacion);
             this.Controls.Add(this.Text_Dosis);
             this.Controls.Add(this.text_Marca);
-            this.Controls.Add(this.Text_Precio);
+            this.Controls.Add(this.text_Precio);
             this.Controls.Add(this.Text_Categoria);
             this.Controls.Add(this.text_Descripción);
             this.Controls.Add(this.Text_Tipodemedicamento);
@@ -489,7 +501,7 @@
         private System.Windows.Forms.TextBox Text_Tipodemedicamento;
         private System.Windows.Forms.TextBox text_Descripción;
         private System.Windows.Forms.TextBox Text_Categoria;
-        private System.Windows.Forms.TextBox Text_Precio;
+        private System.Windows.Forms.TextBox text_Precio;
         private System.Windows.Forms.TextBox text_Marca;
         private System.Windows.Forms.TextBox Text_Dosis;
         private System.Windows.Forms.TextBox text_Presentacion;
@@ -504,6 +516,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button Button_actualizar;
         private System.Windows.Forms.CheckBox Check_Existencia;
+        private System.Windows.Forms.Button eliminarBtn;
     }
 }
 
