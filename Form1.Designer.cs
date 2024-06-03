@@ -423,7 +423,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1026, 666);
+            this.BackgroundImage = global::MIFARMACIA.Properties.Resources.FarmVida;
+            this.ClientSize = new System.Drawing.Size(1149, 666);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.Button_actualizar);
             this.Controls.Add(this.Check_Existencia);
