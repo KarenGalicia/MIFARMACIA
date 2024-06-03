@@ -70,15 +70,16 @@
             this.Button_actualizar = new System.Windows.Forms.Button();
             this.Check_Existencia = new System.Windows.Forms.CheckBox();
             this.eliminarBtn = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewvermedicamentos)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_mostrar
             // 
-            this.Button_mostrar.Location = new System.Drawing.Point(182, 673);
+            this.Button_mostrar.Location = new System.Drawing.Point(147, 652);
             this.Button_mostrar.Margin = new System.Windows.Forms.Padding(4);
             this.Button_mostrar.Name = "Button_mostrar";
-            this.Button_mostrar.Size = new System.Drawing.Size(140, 36);
+            this.Button_mostrar.Size = new System.Drawing.Size(140, 41);
             this.Button_mostrar.TabIndex = 0;
             this.Button_mostrar.Text = "MOSTRAR MEDICAMENTOS";
             this.Button_mostrar.UseVisualStyleBackColor = true;
@@ -88,15 +89,15 @@
             // 
             this.dataGridViewvermedicamentos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewvermedicamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewvermedicamentos.Location = new System.Drawing.Point(-4, 446);
+            this.dataGridViewvermedicamentos.Location = new System.Drawing.Point(-3, 368);
             this.dataGridViewvermedicamentos.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewvermedicamentos.Name = "dataGridViewvermedicamentos";
-            this.dataGridViewvermedicamentos.Size = new System.Drawing.Size(1186, 220);
+            this.dataGridViewvermedicamentos.Size = new System.Drawing.Size(1186, 266);
             this.dataGridViewvermedicamentos.TabIndex = 1;
             // 
             // buttonprueba
             // 
-            this.buttonprueba.Location = new System.Drawing.Point(0, 673);
+            this.buttonprueba.Location = new System.Drawing.Point(-6, 652);
             this.buttonprueba.Margin = new System.Windows.Forms.Padding(4);
             this.buttonprueba.Name = "buttonprueba";
             this.buttonprueba.Size = new System.Drawing.Size(145, 41);
@@ -371,7 +372,7 @@
             this.Text_Indicaciones.Location = new System.Drawing.Point(81, 220);
             this.Text_Indicaciones.Margin = new System.Windows.Forms.Padding(4);
             this.Text_Indicaciones.Name = "Text_Indicaciones";
-            this.Text_Indicaciones.Size = new System.Drawing.Size(1108, 25);
+            this.Text_Indicaciones.Size = new System.Drawing.Size(1101, 25);
             this.Text_Indicaciones.TabIndex = 38;
             // 
             // Text_Contraindicaciones
@@ -428,10 +429,10 @@
             // 
             // Button_actualizar
             // 
-            this.Button_actualizar.Location = new System.Drawing.Point(1000, 383);
+            this.Button_actualizar.Location = new System.Drawing.Point(295, 651);
             this.Button_actualizar.Margin = new System.Windows.Forms.Padding(4);
             this.Button_actualizar.Name = "Button_actualizar";
-            this.Button_actualizar.Size = new System.Drawing.Size(200, 55);
+            this.Button_actualizar.Size = new System.Drawing.Size(182, 40);
             this.Button_actualizar.TabIndex = 50;
             this.Button_actualizar.Text = "ACTUALIZAR";
             this.Button_actualizar.UseVisualStyleBackColor = true;
@@ -450,21 +451,31 @@
             // 
             // eliminarBtn
             // 
-            this.eliminarBtn.Location = new System.Drawing.Point(1000, 328);
+            this.eliminarBtn.Location = new System.Drawing.Point(485, 652);
             this.eliminarBtn.Margin = new System.Windows.Forms.Padding(4);
             this.eliminarBtn.Name = "eliminarBtn";
-            this.eliminarBtn.Size = new System.Drawing.Size(183, 44);
+            this.eliminarBtn.Size = new System.Drawing.Size(183, 39);
             this.eliminarBtn.TabIndex = 51;
             this.eliminarBtn.Text = "ELIMINAR MEDICAMENTO";
             this.eliminarBtn.UseVisualStyleBackColor = true;
             this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(-6, 350);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 14);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "MEDICAMENTOS";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1296, 617);
+            this.ClientSize = new System.Drawing.Size(1296, 704);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.Button_actualizar);
             this.Controls.Add(this.Check_Existencia);
@@ -561,6 +572,7 @@
         private System.Windows.Forms.Button Button_actualizar;
         private System.Windows.Forms.CheckBox Check_Existencia;
         private System.Windows.Forms.Button eliminarBtn;
+        private System.Windows.Forms.Label label9;
     }
 }
 
