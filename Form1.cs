@@ -235,6 +235,11 @@ namespace MIFARMACIA
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
