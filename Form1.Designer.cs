@@ -115,7 +115,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-5, 111);
+            this.label1.Location = new System.Drawing.Point(-5, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 4;
@@ -124,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(194, 111);
+            this.label2.Location = new System.Drawing.Point(194, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 5;
@@ -160,7 +160,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(-2, 175);
+            this.label6.Location = new System.Drawing.Point(-2, 176);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 9;
@@ -178,7 +178,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(313, 175);
+            this.label10.Location = new System.Drawing.Point(313, 176);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 13);
             this.label10.TabIndex = 13;
@@ -196,7 +196,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(671, 175);
+            this.label13.Location = new System.Drawing.Point(671, 176);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(115, 13);
             this.label13.TabIndex = 16;
@@ -372,14 +372,14 @@
             // 
             // dateTimePickerFechadevencimiento
             // 
-            this.dateTimePickerFechadevencimiento.Location = new System.Drawing.Point(792, 175);
+            this.dateTimePickerFechadevencimiento.Location = new System.Drawing.Point(792, 176);
             this.dateTimePickerFechadevencimiento.Name = "dateTimePickerFechadevencimiento";
             this.dateTimePickerFechadevencimiento.Size = new System.Drawing.Size(222, 20);
             this.dateTimePickerFechadevencimiento.TabIndex = 44;
             // 
             // dateTimePicker_Fechadeadquisicion
             // 
-            this.dateTimePicker_Fechadeadquisicion.Location = new System.Drawing.Point(610, 267);
+            this.dateTimePicker_Fechadeadquisicion.Location = new System.Drawing.Point(610, 266);
             this.dateTimePicker_Fechadeadquisicion.Name = "dateTimePicker_Fechadeadquisicion";
             this.dateTimePicker_Fechadeadquisicion.Size = new System.Drawing.Size(198, 20);
             this.dateTimePicker_Fechadeadquisicion.TabIndex = 45;
@@ -423,8 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::MIFARMACIA.Properties.Resources.FarmVida;
-            this.ClientSize = new System.Drawing.Size(1149, 666);
+            this.ClientSize = new System.Drawing.Size(1111, 573);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.Button_actualizar);
             this.Controls.Add(this.Check_Existencia);
