@@ -89,10 +89,10 @@
             // 
             this.dataGridViewvermedicamentos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewvermedicamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewvermedicamentos.Location = new System.Drawing.Point(-3, 368);
+            this.dataGridViewvermedicamentos.Location = new System.Drawing.Point(-3, 499);
             this.dataGridViewvermedicamentos.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewvermedicamentos.Name = "dataGridViewvermedicamentos";
-            this.dataGridViewvermedicamentos.Size = new System.Drawing.Size(1186, 266);
+            this.dataGridViewvermedicamentos.Size = new System.Drawing.Size(1186, 135);
             this.dataGridViewvermedicamentos.TabIndex = 1;
             // 
             // buttonprueba
@@ -474,7 +474,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::MIFARMACIA.Properties.Resources.hacer_clic;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1296, 704);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.eliminarBtn);
@@ -519,6 +519,7 @@
             this.Controls.Add(this.dataGridViewvermedicamentos);
             this.Controls.Add(this.Button_mostrar);
             this.Font = new System.Drawing.Font("The Students Teacher", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "FarmVida";
