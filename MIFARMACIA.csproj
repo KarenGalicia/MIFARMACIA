@@ -199,5 +199,8 @@
   <ItemGroup>
     <None Include="Resources\Kare Gaa1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productos-farmaceuticos.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

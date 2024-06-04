@@ -71,6 +71,7 @@
             this.Check_Existencia = new System.Windows.Forms.CheckBox();
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewvermedicamentos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -417,7 +418,7 @@
             // 
             // dateTimePicker_Fechadeadquisicion
             // 
-            this.dateTimePicker_Fechadeadquisicion.Location = new System.Drawing.Point(708, 287);
+            this.dateTimePicker_Fechadeadquisicion.Location = new System.Drawing.Point(712, 289);
             this.dateTimePicker_Fechadeadquisicion.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker_Fechadeadquisicion.Name = "dateTimePicker_Fechadeadquisicion";
             this.dateTimePicker_Fechadeadquisicion.Size = new System.Drawing.Size(270, 25);
@@ -469,13 +470,24 @@
             this.label9.TabIndex = 53;
             this.label9.Text = "MEDICAMENTOS";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("The Students Teacher", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(302, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(431, 86);
+            this.label7.TabIndex = 54;
+            this.label7.Text = "FARMSVIDA";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1296, 704);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.Button_actualizar);
@@ -519,7 +531,7 @@
             this.Controls.Add(this.dataGridViewvermedicamentos);
             this.Controls.Add(this.Button_mostrar);
             this.Font = new System.Drawing.Font("The Students Teacher", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "FarmVida";
@@ -575,6 +587,7 @@
         private System.Windows.Forms.CheckBox Check_Existencia;
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
     }
 }
 
