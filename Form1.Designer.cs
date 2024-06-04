@@ -474,6 +474,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::MIFARMACIA.Properties.Resources.hacer_clic;
             this.ClientSize = new System.Drawing.Size(1296, 704);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.eliminarBtn);
